@@ -1,0 +1,34 @@
+.button{
+    @include position();
+    cursor: pointer;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-size: type-scale(2);
+    font-family: "Lato";
+    border-bottom: 10px solid white;
+    transition: background 300ms;
+
+    &_normal-size{
+        height: 70px;
+        width: 285px;
+    }
+    &_brown{
+        color: white;
+        background: them-color('accent');
+        border-bottom-color: them-color('accent', 'dark');
+        
+        &:hover{
+            background: #d6a066;
+        }
+    }
+    &_blue{
+        color: white;
+        background: them-color('primary');
+        border-bottom-color: them-color('primary', 'dark');
+        
+        &:hover{
+            background: #009eb6;
+        }
+    }
+
+}

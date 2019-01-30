@@ -1,0 +1,25 @@
+.partners-section{
+    background: #fafafa;
+    //overflow: hidden;
+
+    &__content{
+        height: 100px;
+        @include position(space-between, stretch);
+    }
+    &__item{
+        @include position();
+    }
+}
+
+@include media-breakpoint-down("md"){
+    .partners-section{
+        &__content{
+            //max-width: auto;
+            width: auto;
+            overflow-x: scroll;
+        }
+        &__item{
+            margin-right: 20px;
+        }
+    }
+}

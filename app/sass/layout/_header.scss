@@ -1,0 +1,29 @@
+.header{
+    // position: absolute;
+    width: 100%;
+
+    &__container{
+        @include position(space-between, stretch);
+        height: 110px;
+    }
+    &__logo{
+        @include position(flex-start, center);
+    }
+}
+
+@include media-breakpoint-down("md"){
+    .header{
+        &__logo{
+            img{
+                width: 70%;
+            }
+        }
+    }
+}
+@include media-breakpoint-down("sm"){
+    .header{
+        &__container{
+            width: auto;
+        }
+    }
+}

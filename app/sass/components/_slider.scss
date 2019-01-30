@@ -1,0 +1,26 @@
+.slider{
+    width: 755px;
+    height: 500px;
+    overflow: hidden;
+    border: 10px solid white;
+    box-sizing: border-box;
+
+    img{
+        // height: auto;
+        width: 100% !important;
+    }
+}
+
+@include media-breakpoint-down("sm"){
+    .slider{
+        height: 340px;
+    }
+}
+
+@include media-breakpoint-down("xs"){
+    .slider{
+        max-height: 230px;
+        height: auto;
+        width: 90%;
+    }
+}

@@ -1,0 +1,29 @@
+.slider-section{
+    background: url("../img/raster/slider-screen-bg.png") center no-repeat;
+    background-size: cover;
+    margin-bottom: 110px;
+    
+    &__content{
+        height: calc(100vh - 110px);
+        @include position(center, flex-end);
+    }
+    &__slider{
+        margin-bottom: -50px;
+    }
+}
+
+@include media-breakpoint-down('sm'){
+    .slider-section{
+        &__content{
+            max-height: 500px;
+            width: auto;
+        }
+    }
+}
+@include media-breakpoint-between("sm", "md"){
+    .slider-section{
+        &__content{
+            min-height: 550px !important;
+        }
+    }
+  }

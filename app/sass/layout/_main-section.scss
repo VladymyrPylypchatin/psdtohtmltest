@@ -1,0 +1,42 @@
+.main-section{
+    background: them-color("accent") url("../img/raster/main-screen-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center 40%;
+    height: calc(100vh - 100px);
+    margin-top: -110px;
+    @include position(stretch, stretch);
+
+    &__content{
+        padding-top: 110px;
+        @include position(center, flex-start, column);
+    }
+    &__text{
+        max-width: 450px;
+        margin: 20px 0 40px 0;
+    } 
+}
+
+@include media-breakpoint-down("md"){
+    .main-section{
+        background-position: 10% center;
+    }
+}
+@include media-breakpoint-down("sm"){
+    .main-section{
+        &__content{
+            align-items: center;
+        }
+        &__text{
+            text-align: center;
+        }
+        background-size: auto 100%;
+        background-position: 30% center;
+    }
+}
+
+@include media-breakpoint-between("sm", "md"){
+    .main-section{
+      min-height: 500px !important;
+     
+    }
+  }

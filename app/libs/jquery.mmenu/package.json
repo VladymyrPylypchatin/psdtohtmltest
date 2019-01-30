@@ -1,0 +1,80 @@
+{
+  "_from": "jquery.mmenu",
+  "_id": "jquery.mmenu@7.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-wiurbZlobSXy683EHQevczjklNU1zIHbWxSMHyVlD4+3lvb3r2YkboHoQwXtuPvu/ArukkN5i4aSFsgs1mbSxg==",
+  "_location": "/jquery.mmenu",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jquery.mmenu",
+    "name": "jquery.mmenu",
+    "escapedName": "jquery.mmenu",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery.mmenu/-/jquery.mmenu-7.2.2.tgz",
+  "_shasum": "09b518464bbc8a6a2e7e1781cb63360e32de1484",
+  "_spec": "jquery.mmenu",
+  "_where": "C:\\mysoft\\openserver\\OSPanel\\domains\\testpsdhtml",
+  "author": {
+    "name": "Fred Heusschen",
+    "email": "info@frebsite.nl"
+  },
+  "bugs": {
+    "url": "https://github.com/FrDH/jQuery.mmenu/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "The best jQuery plugin for app look-alike on- and off-canvas menus with sliding submenus for your website and webapp.",
+  "devDependencies": {
+    "@types/hammerjs": "*",
+    "@types/jquery": "*",
+    "@types/modernizr": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-clean-css": "*",
+    "gulp-concat": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-typescript": "*",
+    "gulp-uglify": "*",
+    "gulp-umd": "*",
+    "merge-stream": "*",
+    "typescript": "*"
+  },
+  "homepage": "https://github.com/FrDH/jQuery.mmenu#readme",
+  "keywords": [
+    "app",
+    "list",
+    "listview",
+    "megamenu",
+    "menu",
+    "mmenu",
+    "mobile",
+    "navigation",
+    "off-canvas",
+    "on-canvas",
+    "curtain",
+    "panels",
+    "submenu"
+  ],
+  "license": "CC-BY-NC-4.0",
+  "main": "dist/jquery.mmenu.all.js",
+  "name": "jquery.mmenu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrDH/jQuery.mmenu.git"
+  },
+  "scripts": {
+    "build": "gulp default"
+  },
+  "types": "./index.d.ts",
+  "version": "7.2.2"
+}

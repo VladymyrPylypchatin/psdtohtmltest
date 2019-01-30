@@ -1,0 +1,92 @@
+.join-section{
+    @include position(space-between, stretch);
+    margin-bottom: 60px;
+    
+    
+
+    &__part{
+        width: 50%;
+    }
+    &__part-picture{
+        overflow: hidden;
+        max-height: 620px;
+        @include position();
+
+        img{
+            width: 100%;
+            min-height: 480px;
+            height: auto;
+        }
+    }
+    &__text-part{
+        background: #367ab7;
+        padding: 45px 30px;
+        box-sizing: border-box;
+    }
+    &__motivation-text{
+        font-size: type-scale(1);
+        font-family: "Lato";
+        color: white;
+        font-style: italic;
+        margin-bottom: 40px; 
+        line-height: 1.667;
+    }
+    &__text{
+        max-width: 480px;
+        width: 100%;
+        margin: 20px 0 45px 0;
+    }
+
+}
+
+@include media-breakpoint-down('lg'){
+    .join-section{
+       
+        &__part-picture{
+            overflow: hidden;
+            max-height: auto;
+            img{
+                width: auto;
+                min-height: auto;
+                height: 100%;
+            }
+        }
+    }
+}
+@include media-breakpoint-down('md'){
+    .join-section{
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+
+        &__part{
+            width: 100%;
+        }
+        &__motivation-text{
+            text-align: center;
+        }
+        &__text-part{
+            @include position(flex-start, center, column);
+            text-align: center;
+            padding: 45px 0;
+        }
+        &__part-picture{
+            overflow: hidden;
+            max-height: auto;
+            align-items: flex-start;
+            img{
+                width: 100%;
+                min-height: auto;
+                height: auto;
+            }
+        }
+    }
+}
+@include media-breakpoint-down('sm'){
+    .join-section{
+       
+        &__text-part{
+            padding: 45px 15px;
+        }
+
+    }
+}

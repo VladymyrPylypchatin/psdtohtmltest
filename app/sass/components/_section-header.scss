@@ -1,0 +1,16 @@
+.section-header{
+    font-size: type-scale(3);
+    color: white;
+    font-family: 'Lato';
+    font-weight: 900;
+
+    
+    &_highlighted{
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);    
+        span{
+            display: inline-block;
+            padding-bottom: 20px;
+            border-bottom: 4px solid them-color("primary");
+       }
+    }
+}

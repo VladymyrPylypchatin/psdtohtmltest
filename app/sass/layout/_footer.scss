@@ -1,0 +1,45 @@
+.footer{
+    border-top: 3px solid #cccccc;
+
+    &__content{
+        margin: 45px 0;
+        @include position(flex-start, center, column);
+    }
+    &__dots-box{
+        width: 120px;
+        margin: 50px 0;
+        @include position(space-between, center);
+
+        div{
+            height: 15px;
+            width: 15px;
+            background: #eeeeee;
+        }
+    }
+    &__address-box{
+        @include position(center, center, column);
+    }
+    &__address, &__phone a{
+        display: block;
+        font-family: "Lato";
+        font-size: type-scale(-1);
+        color: #aaaaaa;
+        margin-bottom: 20px;
+    }
+    &__email a{
+            font-size: 13px;
+            font-family: "Lato";
+            color: rgb(225, 170, 110);
+            font-weight: bold;
+    }
+
+    &__copyrights{
+        padding: 30px 0;
+        border-top: 1px solid#eeeeee;
+        color: #aaaaaa;
+        font-size: 12px;
+        font-family: "Lato";
+        text-align: center;
+    }
+          
+}

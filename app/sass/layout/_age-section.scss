@@ -1,0 +1,45 @@
+.age-section{
+    background: them-color("primary");
+
+    &__header{
+        text-align: center;
+        padding: 100px 0 40px 0;
+    }
+    &__text{
+        text-align: center;
+    }
+    &__images{
+        margin-top: 80px;
+        min-height: 225px;
+        @include position(space-between, flex-end);
+        
+        img{ 
+            opacity: 0;
+            will-change: transform;
+            //transition: transform 2s, opacity 2s;
+        }
+
+        .stage7{ transform: translateX(-100px); }
+        .stage6{ transform: translateX(-230px); }
+        .stage5{ transform: translateX(-400px); }
+        .stage4{ transform: translateX(-570px); }
+        .stage3{ transform: translateX(-770px); }
+        .stage2{ transform: translateX(-950px); }
+        .stage1{ transform: translateX(-1125px); }        
+    }
+}
+
+@include media-breakpoint-down("md"){
+    .age-section{
+        &__content{
+            width: auto;
+        }
+        &__images{
+            margin-top: 0;
+            img{
+                flex-grow: 1;
+                width: calc(100% / 7);
+            }
+        }
+    }
+}

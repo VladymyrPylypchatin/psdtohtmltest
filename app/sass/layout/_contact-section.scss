@@ -1,0 +1,21 @@
+.contact-section{
+    &__content{
+        @include position(center, center, column);
+        padding: 70px 0;
+    }
+    &__header{
+            font-size: 24px;
+            font-family: "Lato";
+            font-weight: 700;
+            color: them-color('foreground', 'dark');
+            line-height: 1.6;
+            padding: 0 15px;
+            text-align: center;
+        }
+    &__text{
+        text-align: center;
+        margin: 40px 0;
+        max-width: 755px;
+        padding: 0 15px;
+    }
+}

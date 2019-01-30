@@ -1,0 +1,66 @@
+$them-colors-key: 'base' !default;
+
+// Map of brand colors
+$them-colors: (
+        'primary': (
+                'base': #00b5d2,
+                'dark': #008ba0
+        ),
+        'accent': (
+                'base': #e1aa6e,
+                'dark': #ba8e5b
+        ),
+        'foreground': (
+                'base': #777777,
+                'light': #999999,
+                'dark': #454546,
+        ),
+);
+
+$them-opacity: (
+        'light': 0.2,
+        'base': 0.4,
+        'dark': 0.7
+);
+
+$site-opacity: (
+        'light': 0.8, // opacity used with lighter colors
+        'dark': 0.4, // opacity used with darker colors
+);
+
+//breakpoints of site resizing
+$grid-breakpoints: (
+        'xs': 0,
+        'sm': 576px,
+        'md': 768px,
+        'lg': 992px,
+        'xl': 1200px,
+) !default;
+
+
+
+
+//fonts configs
+$type-scale: (
+        -1: 0.875em, // small text
+        0: 1em, // body text
+        1: 1.125em, // large text
+        2: 1.25em, // strong text
+        3: 3em, //big heading
+);
+
+$base-font-size: 1rem;
+$base-line-height: $base-font-size * 1.25;
+
+
+
+$icon-size: (
+        'xs': 1.2rem,
+        'sm': 1.5rem,
+        'md': 2rem,
+        'lg': 2.5rem,
+        'xl': 3rem,
+);
+
+
+
